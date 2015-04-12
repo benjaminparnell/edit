@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "lint": "standard",
     "prepublish": "npm test",
     "pretest": "gulp build && npm run lint",
