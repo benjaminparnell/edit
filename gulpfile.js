@@ -8,13 +8,9 @@ gulp.task('default', [ 'build' ])
 
 gulp.task('build', [ 'buildjs' ])
 
-gulp.task('buildjs', function () {
-  bundleJs(false)
-})
+gulp.task('buildjs', bundleJs.bind(null, false))
 
-gulp.task('watchjs', function () {
-  bundleJs(true)
-})
+gulp.task('watchjs', bundleJs.bind(null, true))
 
 function bundleJs (watch) {
   var b
