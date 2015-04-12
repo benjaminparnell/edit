@@ -1,0 +1,39 @@
+{
+  "name": "edit",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "standard",
+    "prepublish": "npm test",
+    "pretest": "gulp build && npm run lint",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjaminparnell/edit.git"
+  },
+  "author": "Ben Parnell <me@benparnell.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminparnell/edit/issues"
+  },
+  "homepage": "https://github.com/benjaminparnell/edit",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.4",
+    "standard": "^3.5.0",
+    "watchify": "^3.1.0",
+    "browserify": "^9.0.8"
+  },
+  "dependencies": {
+    "brace": "^0.5.1",
+    "bunyan": "^1.3.4",
+    "express": "^4.12.3",
+    "lodash.throttle": "^3.0.2",
+    "service-locator": "^1.0.0",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5"
+  }
+}
